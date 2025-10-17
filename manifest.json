@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "WPD Icon Restorer",
+  "version": "1.0",
+  "description": "Restores the old WPD icon to the top bar and links it to /shop/pets.",
+  "content_scripts": [
+    {
+      "matches": ["*://watchpeopledie.tv/*", "*://www.watchpeopledie.tv/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "48": "icon.png"
+  }
+}
